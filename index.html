@@ -36,6 +36,15 @@
 
 </head>
 <body>
+	<button
+	type="button"
+	class="btn-danger btn-floating btn-sm"
+	id="btn-back-to-top"
+	href
+	>
+	<i class="fa fa-angle-up"></i>	
+	</button>
+
     
     <!-- // PRELOADER BEGIN -->
 	<!-- <div id="preloader">
@@ -92,9 +101,9 @@
 
 
     <!-- // HOME BEGIN -->
-	<div id="home" class="home-bg" style="background-image: url('assets/img/blog/bgwall.webp')" data-stellar-background-ratio="0.6">
-		<video autoplay muted loop id="myVideo" style="width: 98.8vw;object-fit: cover;height: 100vh;"  >
-			<source src="assets/img/blog/rain.mp4" type="video/mp4">
+	<div id="home" class="home-bg" style="background-image: url('assets/img/blog/bgwall1.jpg')" data-stellar-background-ratio="0.6">
+		<video autoplay muted loop id="myVideo" style="width: 98.8vw;object-fit: cover;height: 100vh;filter:brightness(1)"  >
+			<source src="assets\videos\bg_vid.mp4" type="video/mp4">
 		  </video>
 		<div class="overlay">
 			<div class="container">
@@ -111,8 +120,15 @@
 								<div>Data Scientist</div>
 								<div>Data Analyst</div>
 								<div>Python Developer</div>
-								<div>Data Engineer</div>
 							</h3>
+							<div>
+								<a   style="margin-top: 30px;" href="#portfolio" class="btn btn-dark smoth-scroll" >Projects
+									<!-- <i class="fa fa-download"></i> -->
+								</a>
+								<a   style="margin-top: 30px;" href="#contact" class="btn btn-dark smoth-scroll" >Contact
+									<!-- <i class="fa fa-download"></i> -->
+								</a>
+							</div>
 						</div>
 					</div>
 					<a class="smoth-scroll" href="#about"><i class="fa fa-angle-down arrow"></i></a>
@@ -130,9 +146,9 @@
 				<div class="description col-md-6 col-sm-6 col-xs-12">
 					<h2>Hello, I am Nitin Madas</h2>
 					<!-- <h4>Associate Software Developer at <a style="color:Black;" href="https://www.iqvia.com/">IQVIA</a></h4> -->
-					<p>Welcome to my portfolio website!<br>I am a passionate Data Scientist. Proficient in Python, SQL, Excel and Power BI.<br><br>
+					<p>Welcome to my portfolio website!
+						<br>I am a passionate Data Scientist currently pursuing Master's in Statistics and Data Science. I like to discover insights from data and build data-driven solutions. Eager to contribute analytical and technical proficiency to a data-driven team.
 
-					Through this website, you will discover a collection of my projects and certifications that showcase my abilities and creative problem-solving approach.If you're seeking a Data Scientist who is passionate about delivering excellence, let's connect and collaborate on creating something remarkable together.
 					<!-- <button id="idaboutcollapse" class="btn btn-link collapsed " data-toggle="collapse" data-target="#aboutcollapse" aria-expanded="false" aria-controls="aboutcollapse">
 						show more
 					  </button>
@@ -142,18 +158,53 @@
 					
 
 					<ul class="social-icons">
+						<a href="assets/Nitin_Madas_new_temp.pdf" style="margin-right:15px;" target="_blank" class="btn btn-dark with-arrow smoth-scroll" >My Resume
+							<i class="fa fa-download"></i>
+						</a>
 						<li><a href="https://www.instagram.com/nitinmadas24/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="https://github.com/nitinmadas" target="_blank"><i class="fa fa-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/nitinmadas/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 						<!-- <li><a href="https://www.linkedin.com/in/nitinmadas/"><i class="fa fa-hackerank"></i></a></li> -->
+						
 					</ul>
 
 					<p>
-						<a href="assets/Nitin_Madas_new_temp.pdf" target="_blank" class="btn btn-dark with-arrow smoth-scroll" >My Resume
-							<i class="fa fa-download"></i>
-						</a>
+						
 					</p>
 				</div>
+				<div class="description col-md-6 col-sm-6 col-xs-12">
+					<div class="card-container">
+						<div class="card reusable-blocks">
+							<!-- <img src="assets\img\icons\python_icon.svg" alt="Reusable blocks icon"> -->
+							<h3>Projects</h3>
+						</div>
+						<div class="card easy-drag-drop">
+							<!-- <img src="assets\img\icons\microsoft-excel-icon.svg" alt="Easy drag and drop icon"> -->
+							<h3>12+</h3>
+						</div>
+						<div class="card reusable-blocks">
+							<img src="assets\img\icons\python_icon.svg" alt="Reusable blocks icon">
+							<h3>1+</h3>
+						</div>
+						<div class="card easy-drag-drop">
+							<img src="assets\img\icons\microsoft-excel-icon.svg" alt="Easy drag and drop icon">
+							<h3>2</h3>
+						</div>
+						<div class="card structured-layers">
+							<img src="assets\img\icons\power-bi-icon.svg" alt="Structured layers icon">
+							<h3>1</h3>
+						</div>
+						<div class="card neat-clean-ui">
+							<img src="assets\img\icons\sql_icon.png" alt="Neat and clean UI icon">
+							<h3>1</h3>
+						</div>
+
+						
+					</div>	
+					
+				</div>
+				
+				
 
 			</div>
 		</div>
@@ -256,7 +307,7 @@
 	<!-- // PORTFOLIO END -->
 
 	<!-- // HIRE BEGIN -->
-	<section id="hire">
+	<!-- <section id="hire">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-sm-6 col-xs-12">
@@ -274,7 +325,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- // HIRE END -->
 
 	<!-- // Certificates -->
@@ -417,6 +468,31 @@
 	<script src="assets/js/aos.js"></script>
 	<script src="assets/js/jquery.form.js"></script>
 	<script src="assets/js/jquery.validate.min.js"></script>
+	<script>//Get the button
+		let mybutton = document.getElementById("btn-back-to-top");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+		scrollFunction();
+		};
+		
+		function scrollFunction() {
+		if (
+		document.body.scrollTop > 20 ||
+		document.documentElement.scrollTop > 20
+		) {
+		mybutton.style.display = "block";
+		} else {
+		mybutton.style.display = "none";
+		}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		mybutton.addEventListener("click", backToTop);
+		
+		function backToTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}</script>
 
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
