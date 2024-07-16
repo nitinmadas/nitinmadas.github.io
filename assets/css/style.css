@@ -784,19 +784,28 @@ body {
   padding: 20px;
   
 }
+.tag-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	flex-wrap: wrap;
+}
+
 #space{
 	margin-right: 0.9%;
 }
 #portfolio .tag {
-  background: #cccccc;
+	background-color: rgb(36,140,172);
   border-radius: 50px;
   font-size: 12px;
-  margin: 0;
+  margin: 2px;
   color: #fff;
   padding: 2px 10px;
   text-transform: uppercase;
   cursor: pointer;
 }
+/* 
 #portfolio .tag-teal {
   background-color: #47bcd4;
 }
@@ -806,7 +815,7 @@ body {
 #portfolio .tag-pink {
   background-color: #cd5b9f;
 }
-
+*/
 #portfolio .card-body p {
   font-size: 13px;
   margin: 0 0 40px;
