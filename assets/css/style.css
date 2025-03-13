@@ -564,6 +564,15 @@ body {
 	margin-top: 0;
 }
 
+.responsive-img {
+    width: 100%; /* Makes it responsive */
+    max-width: 538px; /* Limits the max width */
+    height: 300px; /* Keeps height fixed */
+    object-fit: cover; /* Ensures the image crops properly */
+    display: block; /* Removes unwanted space */
+}
+
+
 .description {
 	max-width: 100%;
 	width: 41em;
